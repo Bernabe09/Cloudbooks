@@ -48,6 +48,9 @@ async function obtenerLibrosAutores() {
     }
 }
 
+function abrirPaginaDetalle(url) {
+    window.open(url, '_blank');
+}
 
 function mostrarLibros(libros, container) {
     container.innerHTML = '';
