@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="styles/styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="image/logo2.png" alt="Logo" class="logo">
+          <a href="inicio.html" class="cloudbooks-link"><h1>CloudBooks</h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="index.html">Libros</a></li>
+                <li><a href="prestamos.html">Préstamos</a></li>
+                <li><a href="soliLibro.html">Solicitar libro</a></li>
+                <li class="user-menu">
+                    <a href="#" id="user-icon"><i class="fas fa-user"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="perfil.html"><i class="fas fa-user-circle"></i> Perfil</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+                        <li><a href="home.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Buscar libros...">
+        <button id="searchButton">Buscar</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="libros-container-search">
+            </div>
+        </div>
+    </div>
+    <section id="libros-nuevos">
+        <h2>Nuevos libros añadidos</h2>
+        <div class="libros-container-nuevos">
+        </div>
+    </section>
+    <section id="libros-terror">
+        <h2>Los 5 libros de terror más leídos</h2>
+        <div class="libros-container-terror">
+        </div>
+    </section>
+    <section id="libros-infantiles">
+        <h2>Los 5 libros infantiles más leídos</h2>
+        <div class="libros-container-infantiles">
+        </div>
+    </section>
+    <section id="libros-ciencia">
+        <h2>Los 5 libros de ciencia más leídos</h2>
+        <div class="libros-container-ciencia">
+        </div>
+    </section>
+    <section id="libros-programacion">
+        <h2>Libros sobre programación</h2>
+        <div class="libros-container-programacion">
+        </div>
+    </section>        
+    <footer>
+        <p>&copy; 2024 Biblioteca. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/movLibIndex.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cloudbooks-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .cloudbooks-link:hover,
+  .cloudbooks-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .logout-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 5px; 
+    margin-right: 5px; 
+}
+
+.logout-icon i {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s; 
+}
+
+.logout-icon i:hover {
+    color: #4e9aec; 
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both; 
+}

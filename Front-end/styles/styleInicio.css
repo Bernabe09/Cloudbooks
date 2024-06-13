@@ -1,0 +1,372 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0%;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: #59dae4;
+    text-decoration: none;
+  }
+  
+  .cloudbooks-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .cloudbooks-link:hover,
+  .cloudbooks-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+
+.user-menu {
+  position: relative;
+  display: inline-block; 
+}
+
+/* Estilos para el icono de usuario */
+.user-menu #user-icon {
+  display: inline-block;
+  cursor: pointer; 
+}
+
+/* Estilos para el submenú */
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  border-radius: 8px; 
+  z-index: 1;
+  top: calc(100% + 10px); 
+  left: 0; 
+  min-width: 160px; 
+  opacity: 0;
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+/* Muestra el submenú */
+.user-menu.active .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  left: -170px;
+}
+
+/* Estilos para los elementos del submenú */
+.sub-menu li {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; 
+}
+
+.sub-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px; 
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease; 
+  flex: 1;
+}
+
+/* Estilos para los iconos en el submenú */
+.sub-menu li a i {
+  margin-right: 8px; 
+  font-size: 16px; 
+}
+
+.sub-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.sub-menu li a:hover {
+  color: #000;
+}
+
+/* Sección de introducción */
+#introduccion {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1225px;
+}
+
+#introduccion h1 {
+    color: #333333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#introduccion p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.libro {
+    width: 200px; 
+    margin: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .libro:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+  }
+  
+  .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+
+  /* SECCION LIBROS NOVEDAD */
+
+#libros-destacado {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-destacado h2 {
+    color: #333333;
+  }
+  
+  #libros-destacado {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-destacado h2 {
+    color: #333333;
+  }
+
+  #libros-destacado .libro-container-destacado {
+    display: flex;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
+  }
+  
+  #libros-destacado .libro {
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  #libros-destacado .libro:hover {
+    transform: translateY(-5px); 
+  }
+  
+  #libros-destacado .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+  }
+  
+  #libros-destacado .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+
+/* SECCION LIBROS NOVEDADES */
+
+#libros-novedades {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-novedades h2 {
+    color: #333333;
+  }
+  
+  #libros-novedades {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-novedades h2 {
+    color: #333333;
+  }
+
+  #libros-novedades .libro-container-novedades {
+    display: flex;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
+  }
+  
+  #libros-novedades .libro {
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  #libros-novedades .libro:hover {
+    transform: translateY(-5px); 
+  }
+  
+  #libros-novedades .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+  }
+  
+  #libros-novedades .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+
+  /* SECCION LIBROS DESTACADOS */
+
+#libros-autores {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-autores h2 {
+    color: #333333;
+  }
+  
+  #libros-autores {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-autores h2 {
+    color: #333333;
+  }
+
+  #libros-autores .libro-container-autores {
+    display: flex;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
+  }
+  
+  #libros-autores .libro {
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  #libros-autores .libro:hover {
+    transform: translateY(-5px); 
+  }
+  
+  #libros-autores .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+  }
+  
+  #libros-autores .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

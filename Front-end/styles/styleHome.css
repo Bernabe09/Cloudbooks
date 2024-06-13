@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.sub-menu li {
+    display: inline-block;
+    transition: background-color 0.3s ease; 
+    margin-right: 10px; 
+}
+
+.sub-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px; 
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+    background-color: #ffffff; 
+}
+
+.sub-menu li a:active {
+    transform: scale(0.95); 
+}
+
+.sub-menu li a i {
+    margin-right: 10px; 
+    font-size: 18px; 
+}
+
+.sub-menu li a:hover {
+    color: #ffffff; 
+    background-color: #4ddde7; 
+    transform: scale(1.05); 
+}
+
+#introduccion {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto; 
+    max-width: 1200px; 
+    box-sizing: border-box; 
+}
+
+#introduccion h1 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#introduccion p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #59dae4;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 30px;
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center; 
+}
+
+section h2 {
+    color: #333333;
+}
+
+section p {
+    color: #666666;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both; 
+}
+
+/* Contenedor para los elementos adicionales */
+#additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px; 
+}
+
+/* Estilos para el mapa */
+iframe {
+    border: 0;
+    border-radius: 5px;
+    width: calc(50% + 2px); 
+    height: 450px;
+    margin-right: 20px; 
+    float: left; 
+}
+
+#info-recuadro {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 20px;
+    width: calc(50% - 20px); 
+    box-sizing: border-box; 
+    float: left; 
+}
+
+@media only screen and (max-width: 600px) {
+    #registration-box {
+        width: 90%;
+    }
+}

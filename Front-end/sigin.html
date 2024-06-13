@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBooks</title>
+    <link rel="stylesheet" href="styles/styleSigin.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image/logo2.png" alt="Logo" class="logo">
+            <a href="home.html" class="cloudbooks-link"><h1>CloudBooks</h1></a>
+        </div>
+    </header>
+    <div id="registration-box">
+        <h2>Registro / Nuevo usuario</h2>
+        <form id="registration-form" onsubmit="return validateForm()">
+            <input type="text" name="fullName" id="fullName" placeholder="Nombre completo" oninput="validateFullName(this)" required><br>
+            <input type="text" name="age" id="age" placeholder="Edad" oninput="validateAge(this)" required><br>
+            <input type="tel" name="phone" id="phone" placeholder="Número de celular" maxlength="10" oninput="validatePhone(this)" required><br>
+            <input type="email" name="email" id="email" placeholder="Correo Electronico" required><br>
+            <input type="password" name="password" id="password" placeholder="Contraseña" oninput="validatePassword(this)" required><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar contraseña" oninput="validatePassword(this)" required><br>
+            <p id="passwordError" style="color: red; display: none;">Las contraseñas no coinciden</p>
+            <p id="phoneWarning" style="color: orange; display: none;">El número de teléfono no debe tener más de 10 dígitos</p>
+            <p id="nameWarning" style="color: orange; display: none;">Por favor, ingrese su nombre completo</p>
+            <p id="ageWarning" style="color: orange; display: none;">Por favor, ingrese una edad válida (1-150 años)</p>
+            <input type="submit" value="Registrarse">
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 CloudBooks. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/validSigIn.js"></script> 
+</body>
+</html>
